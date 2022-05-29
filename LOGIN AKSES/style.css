@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 134, 255);
+}
+
+
+.kontener {
+     max-width: 80%;
+     padding: 0 10px 0 0;
+    overflow: hidden; 
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.gambar-kiri{
+    overflow: hidden;
+    width: 50%;
+    flex-grow: 1;
+}
+
+/* .gambar-kiri h1 {
+    position: absolute;
+    color: aliceblue;
+    z-index: 9;
+    left: 25%;
+    top: 40%;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.gambar-kiri h1::after {
+    content: '';
+    left: 0;
+    bottom: -20px;
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color: white;
+} */
+.gambar-kiri img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* width: 580px; */
+    display: block;
+    object-fit: cover;
+    background-size:cover;
+    background-position: center;
+    filter: blur(1px);
+}
+
+
+.form-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.ctn-name {
+    max-width: 400px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+
+.ctn-name h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.ctn-name p {
+    font-size: .8rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+
+.form-data {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 110px;
+    justify-content: space-evenly;
+}
+
+.form-data input {
+    position: relative;
+    width: 70%;
+    padding: 15px;
+    border: none;
+    background-color:rgb(221, 221, 221);
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.form-data i {
+    font-size: 1.4rem;
+    color: rgb(43, 86, 226);
+    top: 15%;
+    right: 20%;
+    position: absolute;
+}
+
+.form-data input:focus{
+    border-bottom: 5px solid rgb(150, 150, 255);
+}
+.form-data input:invalid {
+    background-color: rgb(255, 131, 127);
+}
+.form-data input:valid {
+    background-color: rgb(238, 238, 238);
+}
+.form-data input:required {
+    background-color: rgb(51, 17, 17);
+}
+.button-type {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-type button {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    color:white;
+    background-color:rgb(69, 104, 0);
+    width: 70%;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+} 
+
+
+.button-type button:hover {
+    background-color: rgb(89, 133, 3);
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.social-media i {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.forget {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.forget a {
+    text-decoration: none;  
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+@media screen and ( max-width : 576px) {
+    .gambar-kiri {
+        display: none;
+    }
+}
